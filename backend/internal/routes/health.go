@@ -1,3 +1,4 @@
+// internal/routes/health.go
 package routes
 
 import (
@@ -5,6 +6,6 @@ import (
 	"github.com/vishnu777000/OpsLens/backend/internal/handlers"
 )
 
-func RegisterHealthRoutes(router *gin.Engine) {
+func RegisterHealthRoutes(router *gin.RouterGroup) {
 	router.GET("/health", handlers.HealthHandler)
 }

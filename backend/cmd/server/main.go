@@ -8,7 +8,7 @@ import (
 func main() {
 	router := gin.Default()
 
-	routes.RegisterHealthRoutes(router)
+	routes.RegisterRoutes(router)
 
 	router.Run(":8080")
 }
